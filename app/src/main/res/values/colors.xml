@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6cbe35</color>
+    <color name="colorPrimaryDark">#5AA02C</color>
+    <color name="colorAccent">#6cbd35</color>
+    <color name="hijau">#f28ae74b</color>
+    <color name="hijau2">#d3ffd3</color>
+    <color name="hijau3">#2a5110</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#808080</color>
+    <color name="grey2">#E4E4E4</color>
+    <color name="grey3">#AFAFAF</color>
+</resources>

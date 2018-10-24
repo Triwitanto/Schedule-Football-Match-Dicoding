@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_list_previous"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    tools:layout_editor_absoluteX="4dp"
+    tools:layout_editor_absoluteY="85dp">
+
+    <ImageView
+        android:id="@+id/iv_player"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        tools:src="@drawable/chelsea_contoh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_name_player"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/tt0248m_"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/grey"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_position"
+        app:layout_constraintStart_toEndOf="@+id/iv_player"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Hazard" />
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/tt0248m_"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="goalkeeping" />
+
+</android.support.constraint.ConstraintLayout>

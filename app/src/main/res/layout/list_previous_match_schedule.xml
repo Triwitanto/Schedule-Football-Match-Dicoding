@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/cl_list_previous"
+    android:background="@drawable/ic_list_next_match"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_date_event"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/grey"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_icon"
+        app:layout_constraintStart_toStartOf="@+id/tv_icon"
+        tools:text="min, 2018-09-15 "
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tv_time_event"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/grey"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_date_event"
+        app:layout_constraintEnd_toEndOf="@+id/tv_icon"
+        app:layout_constraintStart_toStartOf="@+id/tv_icon"
+        tools:ignore="SmallSp"
+        tools:text="22:22" />
+
+    <TextView
+        android:id="@+id/tv_name_team1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:maxLines="2"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/tt0248m_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Liverpool" />
+
+    <TextView
+        android:id="@+id/tv_score_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/tt0248m_"
+        android:textSize="30sp"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_icon"
+        app:layout_constraintStart_toEndOf="@id/tv_name_team1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/tv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/tt0248m_"
+        android:text="@string/sles"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_score_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/tt0248m_"
+        android:textSize="30sp"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_name_team2"
+        app:layout_constraintStart_toEndOf="@id/tv_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_name_team2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/tt0248m_"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:maxLines="2"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Chelsea" />
+
+</android.support.constraint.ConstraintLayout>

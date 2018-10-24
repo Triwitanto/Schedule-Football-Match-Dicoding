@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".ui.activity.detail.DetailActivity">
+
+
+<ImageView
+    android:id="@+id/imageView4"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/ic_bg_home"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="match_parent"
+    android:layout_height="133dp"
+    android:layout_marginEnd="22dp"
+    android:layout_marginStart="22dp"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/ic_detail_tim"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/iv_logo_team1"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginBottom="39dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/ic_club"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintEnd_toStartOf="@+id/iv_score_team1"
+    app:layout_constraintStart_toStartOf="@+id/imageView2"
+    app:layout_constraintTop_toTopOf="@+id/imageView2"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/iv_logo_team2"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginBottom="39dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/ic_club"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+    app:layout_constraintStart_toEndOf="@+id/iv_score_team2"
+    app:layout_constraintTop_toTopOf="@+id/imageView2"
+    app:layout_constraintVertical_bias="0.47"
+    tools:ignore="ContentDescription" />
+
+<TextView
+    android:id="@+id/iv_name_team1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="8dp"
+    android:fontFamily="@font/tt0248m_"
+    android:gravity="center"
+    android:maxLines="2"
+    android:text="@string/chelsea"
+    android:textSize="15sp"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintEnd_toStartOf="@+id/iv_score_team1"
+    app:layout_constraintStart_toStartOf="@+id/imageView2"
+    app:layout_constraintTop_toBottomOf="@+id/iv_logo_team1" />
+
+<TextView
+    android:id="@+id/iv_name_team2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:fontFamily="@font/tt0248m_"
+    android:gravity="center"
+    android:maxLines="2"
+    android:text="@string/chelsea"
+    android:textSize="15sp"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+    app:layout_constraintStart_toEndOf="@+id/iv_score_team2"
+    app:layout_constraintTop_toBottomOf="@+id/iv_logo_team2" />
+
+<TextView
+    android:id="@+id/textViewSles"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="32dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:fontFamily="@font/segoeuib"
+    android:text="@string/sles"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+    app:layout_constraintStart_toStartOf="@+id/imageView2"
+    app:layout_constraintTop_toTopOf="@+id/imageView2"
+    tools:ignore="SmallSp" />
+
+<TextView
+    android:id="@+id/iv_score_team1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="32dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:fontFamily="@font/tt0248m_"
+    android:text="@string/ksong"
+    android:textSize="50sp"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintEnd_toStartOf="@+id/textViewSles"
+    app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+<TextView
+    android:id="@+id/iv_score_team2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:fontFamily="@font/tt0248m_"
+    android:text="@string/ksong"
+    android:textSize="50sp"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintStart_toEndOf="@+id/textViewSles"
+    app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tv_time_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/tt0248m_"
+        android:text="22:22"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_date_match"
+        app:layout_constraintEnd_toEndOf="@+id/iv_name_team2"
+        app:layout_constraintStart_toStartOf="@+id/iv_name_team1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSles"
+        tools:ignore="SmallSp" />
+
+<TextView
+    android:id="@+id/tv_date_match"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="5dp"
+    android:fontFamily="@font/tt0248m_"
+    android:text="@string/senin_22_mei_2020"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="@+id/iv_name_team2"
+    app:layout_constraintStart_toStartOf="@+id/iv_name_team1"
+    app:layout_constraintTop_toBottomOf="@+id/iv_name_team1"
+    tools:ignore="SmallSp" />
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_date_match">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_grey_goal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_formation"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_formation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/tt0248m_"
+            android:text="@string/formation"
+            android:textColor="@color/grey3"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/tv_formation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/tt0248m_"
+            android:text="@string/formation"
+            android:textColor="@color/grey3"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/imageView44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_grey_goal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_player_goal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView44"
+                app:layout_constraintEnd_toEndOf="@+id/imageView44"
+                app:layout_constraintStart_toStartOf="@+id/imageView44"
+                app:layout_constraintTop_toTopOf="@+id/imageView44"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_goal2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/tt0248m_"
+                android:text="@string/player_50_nplayer_33"
+                android:textColor="@color/grey3"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView44"
+                app:layout_constraintEnd_toEndOf="@+id/imageView44"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView44" />
+
+            <TextView
+                android:id="@+id/tv_goal1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/tt0248m_"
+                android:gravity="end"
+                android:text="@string/player_50_nplayer_33"
+                android:textColor="@color/grey3"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView44"
+                app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView44" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/tt0248m_"
+            android:text="@string/lineups"
+            android:textColor="@color/hijau"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView44" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_grey_goal2"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/cl_attack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:ignore="ContentDescription" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_gk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toTopOf="@+id/imageView">
+
+            <ImageView
+                android:id="@+id/iv_goalkeeper"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_goalkeeping"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_name_gk1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:gravity="end"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_goalkeeper"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_gk2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_goalkeeper"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_defense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/cl_gk">
+
+            <ImageView
+                android:id="@+id/iv_defense"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_devender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_name_defense1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:gravity="end"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_defense"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_defense2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_defense"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_center_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/cl_defense">
+
+            <ImageView
+                android:id="@+id/iv_center_player"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_center_player"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_name_center_player1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:gravity="end"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_center_player"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_center_player2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_center_player"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_attack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/cl_center_player">
+
+            <ImageView
+                android:id="@+id/iv_attack"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_attacker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_name_attack1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:gravity="end"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_attack"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_attack2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/tt0248m_"
+                android:text="@string/kepa_arizabalaha"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_attack"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
