@@ -17,7 +17,6 @@ class DetailPresenter(private val view: DetailView,
 
     fun getDetailMatch(idEvent: String){
         view.showLoading()
-        Log.i("####", idEvent)
 
         async(contextPool.main) {
             val data = bg {
@@ -32,8 +31,6 @@ class DetailPresenter(private val view: DetailView,
     }
 
     fun getImageHome(idTeam: String){
-        Log.i("####", idTeam)
-
         async(contextPool.main) {
             val data = bg {
                 gson.fromJson(apiRepository
@@ -45,9 +42,8 @@ class DetailPresenter(private val view: DetailView,
             view.getHomeBadge(data.await().teams)
         }
     }
-    fun getImageAway(idTeam: String){
-        Log.i("####", idTeam)
 
+    fun getImageAway(idTeam: String){
         async(contextPool.main) {
             val data = bg {
                 gson.fromJson(apiRepository

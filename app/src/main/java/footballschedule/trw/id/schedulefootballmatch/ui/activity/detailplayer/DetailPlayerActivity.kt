@@ -14,11 +14,9 @@ import footballschedule.trw.id.schedulefootballmatch.util.visible
 import kotlinx.android.synthetic.main.activity_detail_player.*
 
 class DetailPlayerActivity : AppCompatActivity(), DetailPlayerView {
-
     private lateinit var presenter: DetailPlayerPresenter
     private lateinit var idPlayer : String
     private lateinit var namaPlayer : String
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +32,6 @@ class DetailPlayerActivity : AppCompatActivity(), DetailPlayerView {
         val gson = Gson()
         presenter = DetailPlayerPresenter(this, request, gson)
         presenter.getDetailPlayer(idPlayer)
-        Log.i("test",idPlayer)
-
     }
 
     override fun showLoading() {

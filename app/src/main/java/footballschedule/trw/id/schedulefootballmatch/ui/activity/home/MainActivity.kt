@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun selectedFragment(fragment: Fragment) {
         val transaction : FragmentTransaction? = supportFragmentManager.beginTransaction()
         transaction?.replace(R.id.main_container, fragment)
