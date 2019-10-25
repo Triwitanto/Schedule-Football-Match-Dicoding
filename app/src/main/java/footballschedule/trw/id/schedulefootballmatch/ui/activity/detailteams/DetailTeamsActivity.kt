@@ -26,8 +26,6 @@ import org.jetbrains.anko.db.insert
 import org.jetbrains.anko.db.select
 
 class DetailTeamsActivity : AppCompatActivity(), DetailTeamsView {
-
-
     private lateinit var presenter: DetailTeamsPresenter
     private var menuItem: Menu? = null
     private var isFavorite: Boolean = false
@@ -41,15 +39,12 @@ class DetailTeamsActivity : AppCompatActivity(), DetailTeamsView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_teams)
 
-
-
         val intent = intent
         idTeam = intent.getStringExtra("idTeam")
         namaTeam = intent.getStringExtra("namaTeam")
         imgTeam = intent.getStringExtra("imgTeam")
         supportActionBar?.title = "Detail Team"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
 
         val request = ApiRepository()
         val gson = Gson()
@@ -69,7 +64,6 @@ class DetailTeamsActivity : AppCompatActivity(), DetailTeamsView {
         //set Fragmentclass Arguments
         val namaTeamKirim = DesTeamFragment()
         namaTeamKirim.arguments = bundle
-
     }
 
     private fun setupViewPager(viewPager: ViewPager) {
@@ -143,10 +137,8 @@ class DetailTeamsActivity : AppCompatActivity(), DetailTeamsView {
                         FavoriteTeams.IMG_TEAM_DETAIL to imgTeam
                 )
             }
-            Log.i("####", "Berhasil Menyimpan")
-//            snackbar(swipeRefresh, "Added to favorite").show()
         } catch (e: SQLiteConstraintException){
-//            snackbar(swipeRefresh, e.localizedMessage).show()
+            e.printStackTrace()
         }
     }
 
@@ -159,7 +151,7 @@ class DetailTeamsActivity : AppCompatActivity(), DetailTeamsView {
             }
             Log.i("####", "Menghapus favorite")
         } catch (e: SQLiteConstraintException){
-//            snackbar(swipeRefresh, e.localizedMessage).show()
+            e.printStackTrace()
         }
     }
 

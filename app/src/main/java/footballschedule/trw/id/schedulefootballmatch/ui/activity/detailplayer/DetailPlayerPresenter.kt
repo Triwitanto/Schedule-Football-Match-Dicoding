@@ -24,7 +24,6 @@ class DetailPlayerPresenter(private val view: DetailPlayerView,
             }
             view.showDetailPalyer(data.await().player!!)
             view.hideLoading()
-//            Log.i("####", eventNext)
         }
     }
 }

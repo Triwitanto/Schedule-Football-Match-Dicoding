@@ -12,12 +12,6 @@ import footballschedule.trw.id.schedulefootballmatch.ui.fragment.teams.listplaye
 
 class TabDetailTeamAdapter(private val namaTeam: String, fm: FragmentManager): FragmentPagerAdapter(fm){
 
-//    private val pages = listOf(
-//            DesTeamFragment(),
-//            ListPlayerFragment()
-//    )
-
-    // menentukan fragment yang akan dibuka pada posisi tertentu
     override fun getItem(position: Int): Fragment {
         return when (position){
             0 -> {

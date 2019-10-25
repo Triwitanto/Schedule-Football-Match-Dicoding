@@ -30,10 +30,8 @@ import org.jetbrains.anko.db.select
 import java.text.SimpleDateFormat
 import java.util.*
 
-
 @SuppressLint("Registered")
 class DetailActivity : AppCompatActivity(), DetailView {
-
     private lateinit var presenter: DetailPresenter
     private var menuItem: Menu? = null
     private var isFavorite: Boolean = false
@@ -57,7 +55,6 @@ class DetailActivity : AppCompatActivity(), DetailView {
         idTeamA = intent.getStringExtra("idTeamA")
         supportActionBar?.title = "Team Detail"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
 
         val request = ApiRepository()
         val gson = Gson()
@@ -105,14 +102,6 @@ class DetailActivity : AppCompatActivity(), DetailView {
     }
 
     override fun showDetailMatch(data: List<Event>) {
-        Log.i("####", "triwiiii")
-
-//        val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-//        simpleDateFormat.timeZone =  data[0].strTime.toString()
-//        val myDate = simpleDateFormat.parse(rawQuestion.getString("AskDateTime"))
-
-//        System.out.println("System Date in GMT: "+formatDateToString(data[0].strTime, "dd MMM yyyy hh:mm:ss a", "GMT"));
-
         val df =  SimpleDateFormat("HH:mm", Locale.ENGLISH)
         df.timeZone = TimeZone.getTimeZone("UTC")
         val date = df.parse(data[0].strTime)
@@ -196,9 +185,8 @@ class DetailActivity : AppCompatActivity(), DetailView {
                 )
             }
             Log.i("####", "Berhasil Menyimpan")
-//            snackbar(swipeRefresh, "Added to favorite").show()
         } catch (e: SQLiteConstraintException){
-//            snackbar(swipeRefresh, e.localizedMessage).show()
+            e.printStackTrace()
         }
     }
 
@@ -211,7 +199,7 @@ class DetailActivity : AppCompatActivity(), DetailView {
             }
             Log.i("####", "Menghapus favorite")
         } catch (e: SQLiteConstraintException){
-//            snackbar(swipeRefresh, e.localizedMessage).show()
+            e.printStackTrace()
         }
     }
 
